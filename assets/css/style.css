@@ -15,13 +15,21 @@
 /* Global Styles */
 
 body {
-font-family: var(--primary-font);
+  font-family: var(--primary-font);
 }
 
 h1, h2, h3 {
-font-family: var(--secondary-font);
-color: var(--primary-color);
-text-transform: uppercase;
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-bottom: 2rem;
 }
 
 .sub-heading-color {
@@ -49,7 +57,17 @@ text-transform: uppercase;
   font-family: var(--secondary-font);
 }
 
+/* Services */
 
+#services .card-footer {
+  font-weight: bold;
+  color: var(--highlight-color);
+  background-color: transparent;
+}
+
+#services .card {
+  margin-bottom: 1rem;
+}
 
 /* Grid visualisation for css testing */
 
