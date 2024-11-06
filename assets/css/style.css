@@ -66,6 +66,17 @@ h2 {
   color: white;
 }
 
+.student-discount-button {
+  border: 2px solid var(--highlight-color);
+  background-color: var(--highlight-color);
+  color: white;
+}
+
+.student-discount-button:hover {
+  border: 3px solid var(--highlight-color);
+  background-color: white;
+  color: var(--highlight-color);
+}
 
 /* Navbar */
 
@@ -101,6 +112,25 @@ h2 {
 #fav-games .card {
     border: none;
 }
+
+/* Events */
+
+.container { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+} 
+  
+.column { 
+  flex: 1; 
+}
+
+
+/* .box2 { 
+  position: relative; 
+  left: 100px; 
+  bottom: 50px; 
+} */
 
 /* Footer / contact */
 #contact {
@@ -156,6 +186,11 @@ h2 {
   #services .card-body {
     min-height: 191px;
   }
+
+  .container {
+    flex-direction: row;
+    min-height: 191px;
+  }
 }
 
 @media screen and (min-width: 992x) {
@@ -165,9 +200,16 @@ h2 {
   }
 }
 
+
+
 @media screen and (min-width: 1200px) {
   /* Make all service cards the same height for consistency */
   #services .card-body {
+    min-height: 220px;
+  }
+
+  .container {
+    flex-direction: column;
     min-height: 220px;
   }
 }
@@ -175,6 +217,11 @@ h2 {
 @media screen and (min-width: 1400px) {
   /* Make all service cards the same height for consistency */
   #services .card-body {
+    min-height: 195px;
+  }
+
+  .container {
+    flex-direction: column;
     min-height: 195px;
   }
 }
